@@ -30,7 +30,7 @@ def send_request():
 
 # Buat thread untuk mengirimkan request
 threads = []
-for _ in range(num_requests):
+for _ in range(1000):
     t = threading.Thread(target=send_request)
     t.start()
     threads.append(t)
