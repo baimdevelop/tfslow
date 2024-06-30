@@ -10,7 +10,7 @@ target_url = input("Masukkan URL target: ")
 num_requests = int(input("Masukkan jumlah request: "))
 
 # Interval waktu antar request
-interval = 0
+interval = 0.5  # 0.5 seconds
 
 # User Agent
 user_agent = ["Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3",
@@ -27,6 +27,7 @@ def send_request():
             print(f"Request sent successfully!")
         else:
             print(f"Request failed with status code {response.status_code}")
+        time.sleep(interval)  # Add a delay between requests
 
 # Buat thread untuk mengirimkan request
 threads = []
