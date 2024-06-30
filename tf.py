@@ -42,4 +42,4 @@ for t in threads:
 # Pemberitahuan jika website down
 if response.status_code != 200:
     print(f"\033[91mWEBSITE TELAH DOWN\033[0m")
-    print(f"\033[92mSCRIPT SENDANG MENGIRIMKAN PERMINTAAN\033[0m"
+    print(f"\033[92mSCRIPT SENDANG MENGIRIMKAN PERMINTAAN\033[0m")
